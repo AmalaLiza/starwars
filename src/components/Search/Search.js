@@ -107,10 +107,10 @@ const Search = () => {
         />
         <Image src={SearchIcon} alt="Search icon" />
       </InputWrapper>
-      {isLoading ? (
-        <Message type="warning">Loading...</Message>
-      ) : (
-        searchText.length >= 2 && (
+      {searchText.length >= 2 &&
+        (isLoading ? (
+          <Message type="warning">Loading...</Message>
+        ) : (
           <ListWrapper>
             <List
               items={searchResults}
@@ -120,8 +120,7 @@ const Search = () => {
               }}
             />
           </ListWrapper>
-        )
-      )}
+        ))}
     </Wrapper>
   );
 };
