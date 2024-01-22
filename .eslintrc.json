@@ -1,8 +1,4 @@
 {
   "root": true,
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "plugin:react-hooks/recommended"
-  ]
+  "extends": ["react-app", "react-app/jest", "plugin:react-hooks/recommended"]
 }
